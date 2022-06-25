@@ -60,10 +60,12 @@ function Project() {
             <h3 className="flex mb-4">
               <div className="pt-2 mr-2">
                 <Link to={grantsPath()}>
-                  <Arrow color={colors["primary-text"]} />
+                  <span className="inline-flex items-center">
+                    <Arrow color={colors["primary-text"]} />
+                    <div className="ml-3 mt-1">Project Details</div>
+                  </span>
                 </Link>{" "}
               </div>
-              Project Details
             </h3>
             {props.id && (
               <Link
